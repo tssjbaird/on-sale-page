@@ -26,7 +26,6 @@ h1{
 h2{
     font-size: 2rem;
     text-align: center;
-    margin-top: 50px;
 }
 
 p{
@@ -47,6 +46,12 @@ img {
     line-height: 1;
     letter-spacing: .2rem;
     word-spacing: .5rem;
+}
+
+.container{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 50px;
 }
 
 /* We're using breakpoints at 576px, 768px, 992px and 1200 */
@@ -172,10 +177,6 @@ img {
 /*///////////////////
     Info Section
 */
-.info-container{
-    padding: 20px;
-}
-
 .info{
     flex-direction: column;
     margin-top: 40px;
@@ -210,4 +211,28 @@ img {
 
 .testimonial p{
     margin-top: 10px;
+}
+
+/*///////////////////
+    Contact Section
+*/
+
+.contact-box{
+    background-image: url("./assets/images/asphalt_texture409.png");
+    text-align: center;
+    padding: 0;
+}
+
+.contact-box p{
+    font-family: 'Badaboom', 'Impact', fantasy;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contact-box p{
+    color: #fff;
+}
+
+.contact-box p:last-child{
+    color:#fedd00;
 }
