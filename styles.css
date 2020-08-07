@@ -221,6 +221,7 @@ img {
     background-image: url("./assets/images/asphalt_texture409.png");
     text-align: center;
     padding: 0;
+    margin: 0 20px;
 }
 
 .contact-box p{
