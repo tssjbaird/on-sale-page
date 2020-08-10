@@ -140,7 +140,7 @@
 }
 
 .testimonial img{
-    width: 200px
+    width: 150px
 }
 
 .testimonial p{
@@ -157,9 +157,9 @@
 
 .contact-box{
     background-image: url("../assets/images/asphalt_texture409.png");
-    text-align: center;
-    margin: 10px 0;
+    margin-top: 20px;;
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     height: 175px;
@@ -177,24 +177,4 @@
 
 .contact-box p:last-child{
     color:#fedd00;
-}
-
-/* We're using breakpoints at 576px, 768px, 992px and 1200 */
-@media (min-width: 768px) {
-    .contact-box{
-        max-width: 220px;
-    }
-}
-
-@media (min-width: 992px) {
-    .contact-box{
-        max-width: 300px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .contact-box{
-        max-width: 350px;
-        margin: 20px 0;
-    }
 }
