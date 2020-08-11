@@ -1,56 +1,8 @@
 /* Page 1 */
 
-/*///////////////////
-    Hero Section
-*/
 
 .hero{
     background-image: url("../assets/images/img-desktop1-hero-blank.png");
-    height: 500px;
-    text-align: center;
-    padding: 0;
-}
-
-.hero-form{
-    height: 100%;
-    width: 100%;
-    padding: 0 5%;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 27%, rgba(0,0,0,0.9) 100%);
-}
-
-.hero-form p, .hero-form label{
-    color: #fff;
-}
-
-.hero-form input{
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-}
-
-.cta-btn{
-    margin: 0 auto;
-    max-width: 300px;
-    width: 100%
-}
-
-
-/* We're using breakpoints at 576px, 768px, 992px and 1200 */
-@media (min-width: 768px) {
-    .hero h2{
-        text-align: center;
-    }
-}
-
-@media (min-width: 992px) {
-    .hero-form{
-        padding-right: 5%;
-        background: none;
-        max-width: 1000px;
-        background: rgb(0,0,0);
-        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 27%, rgba(0,0,0,0.9) 100%);
-    }
 }
 
 /*///////////////////
@@ -106,49 +58,6 @@
     font-family: 'Badaboom', 'Impact', fantasy;
     font-size: 1.2rem;
     font-weight: 500;
-}
-
-/*///////////////////
-    Info Section
-*/
-.info{
-    flex-direction: column;
-    margin-top: 40px;
-}
-
-.info img, .info p{
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-@media (min-width: 992px) {
-    .info{
-        flex-direction: row;
-    }
-
-    .info img{
-        padding-right: 30px;
-    }
-}
-
-/*///////////////////
-    Testimonials Section
-*/
-
-.testimonial-row{
-    margin-top: 40px;
-}
-
-.testimonial img{
-    width: 150px
-}
-
-.testimonial p{
-    margin-top: 10px;
-}
-
-.testimonial p:last-child{
-    font-weight: 600;
 }
 
 /*///////////////////
