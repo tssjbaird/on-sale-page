@@ -21,7 +21,7 @@ h2{
 
 .hero{
     background-image: url("../assets/images/img-desktop3-hero-blank.png");
-    background-position-x: center;
+    background-position-x: left;
 }
 
 .hero-form{
@@ -29,59 +29,36 @@ h2{
 }
 
 /*///////////////////
-    Contact Section
+    Item Section
 */
-.contact p{
-    font-size: 1.5rem;
-    margin: 0px;
+.item-container_grey{
+    margin-top: 0;
+    padding: 40px 25px;
 }
 
-.contact a, .contact button{
-    font-family: 'Badaboom', 'Impact', fantasy;
-    margin-top: 5px;
-    white-space: pre-wrap;       /* css-3 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word; 
+.grey{
+    margin-top: 20px;
+    background-color: #efefef;
 }
 
-.contact a{
-    font-size: 2rem;
-}
-
-.contact button{
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-.contact-text{
-    height: 280px;
-    margin-top: 10px;
-}
-
-.call, .email{
-    text-align: center;
+.item-img{
+    margin-top: 30px;
 }
 
 /* We're using breakpoints at 576px, 768px, 992px and 1200 */
-
 @media (min-width: 992px) {
-    .call, .email{
-        text-align: left;
+    .item-container{
+        margin-top: 90px;
+        margin-bottom: 90px;
+        padding: 0;
     }
-}
-
-/*///////////////////
-    Item Info
-*/
-.item-container{
-    margin-top: 40px;
-    padding: 0;
-}
-
-.item-wrapper{
-    margin-top: 40px;
+    
+    .item-container_grey{
+        padding: 90px 0;
+    }
+    .item-img{
+        margin-top: 0px;
+    }
 }
 
 
@@ -89,17 +66,69 @@ h2{
     Info Section
 */
 .info-container_full{
-    margin-top: 40px;
+    margin-top: 0;
     padding: 0;
     color: #fff;
     background-color: #182749;
 }
 
+.info{
+    margin-top: 0;
+}
+
 .info h3{
+    margin-top: 20px;
     text-align: center;
     color: #fff;
 }
 
 .info-text{
-    padding: 15px 90px;
+    padding: 15px 25px;
 }
+
+@media (min-width: 992px) {
+    .info-text{
+        padding: 15px 90px;
+    }
+}
+
+
+
+/*///////////////////
+    Testimonial Section
+*/
+
+.testimonial-container h3{
+    text-align: center;
+}
+
+.testimonial{
+    margin-top: 20px;
+    padding: 20px;
+    height: 400px;
+    color: #fff;
+    background-color: #182749;
+}
+
+.testimonial p:last-child{
+    font-weight: 700;
+}
+
+/*///////////////////
+    Contact Section
+*/
+.contact{
+    margin-top: 70px;
+}
+
+.contact h3{
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .contact h3{
+        font-size: 3rem;
+    }
+}
+
