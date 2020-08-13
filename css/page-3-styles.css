@@ -15,6 +15,10 @@ h2{
     background-color: #182749;
 }
 
+a{
+    margin-top: 5px;
+}
+
 /*///////////////////
     Hero Section
 */
@@ -31,18 +35,19 @@ h2{
 /*///////////////////
     Item Section
 */
-.item-container_grey{
-    margin-top: 0;
-    padding: 40px 25px;
-}
 
 .grey{
     margin-top: 20px;
+    padding: 40px 25px;
     background-color: #efefef;
 }
 
 .item-img{
-    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.links{
+    margin-top: 20px;
 }
 
 /* We're using breakpoints at 576px, 768px, 992px and 1200 */
@@ -52,12 +57,13 @@ h2{
         margin-bottom: 90px;
         padding: 0;
     }
-    
-    .item-container_grey{
-        padding: 90px 0;
-    }
+
     .item-img{
         margin-top: 0px;
+    }
+
+    .item-img{
+        margin-bottom: 0;
     }
 }
 
@@ -66,7 +72,7 @@ h2{
     Info Section
 */
 .info-container_full{
-    margin-top: 0;
+    margin-top: 50px;
     padding: 0;
     color: #fff;
     background-color: #182749;
