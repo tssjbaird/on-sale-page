@@ -18,19 +18,24 @@ h1, h2, h3, h4, h5, h6, .cta-font{
     font-family: 'Badaboom', sans-serif;
 }
 
-
 h1{
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: #fedd00;
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
 }
 
+/* This lets you put a span around text you want on one line*/
+.new-line::before {
+    content: '\A'; 
+    white-space: pre;
+}
+
 h3{
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
 
 p{
@@ -69,18 +74,7 @@ a:hover{
 
 /* We're using breakpoints at 576px, 768px, 992px and 1200 */
 @media (min-width: 768px) {
-    h1{
-        font-size: 4rem;
-        color: #fedd00;
-    }
-
-    h2{
-        font-size: 3rem;
-    }
-
-    h3{
-        font-size: 2.5rem;
-    }
+    .new-line::before {content: ' '; white-space: pre;}
 }
 
 /*///////////////////
@@ -90,7 +84,6 @@ a:hover{
 .hero{
     /* Set background image on specific page CSS */
     height: 500px;
-    text-align: center;
     padding: 0;
 }
 
@@ -99,21 +92,19 @@ a:hover{
     width: 100%;
     padding: 0 5%;
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 27%, rgba(0,0,0,0.9) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 27%, rgba(0,0,0,0.7) 100%);
 }
 
-.hero-form p, .hero-form label{
+.hero-form b, .hero-form label{
     color: #fff;
 }
 
-.hero-form input{
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
+.form-group{
+    margin-top: 10px;
+    width: 50%;
 }
 
 .cta-btn{
-    margin: 0 auto;
     max-width: 300px;
     width: 100%
 }
@@ -121,7 +112,7 @@ a:hover{
 
 /* We're using breakpoints at 576px, 768px, 992px and 1200 */
 @media (min-width: 768px) {
-    .hero h2{
+    .hero{
         text-align: center;
     }
 }
@@ -131,8 +122,7 @@ a:hover{
         padding-right: 5%;
         background: none;
         max-width: 1000px;
-        background: rgb(0,0,0);
-        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 27%, rgba(0,0,0,0.9) 100%);
+        background: none;
     }
 }
 
@@ -145,8 +135,12 @@ a:hover{
     margin-top: 40px;
 }
 
-.info img, .info p{
+.info img{
     padding: 0;
+}
+
+.info p{
+    padding: 10px 0 0;
 }
 
 .info-text{

@@ -2,7 +2,19 @@
 
 
 .hero{
+    text-align: right;
     background-image: url("../assets/images/img-desktop1-hero-blank.png");
+}
+
+.hero-form{
+    text-align: right;
+}
+
+/* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 768px) {
+    .hero-form{
+        text-align: center;
+    }
 }
 
 /*///////////////////
@@ -22,6 +34,11 @@
 .item-image{
     position: relative;
 
+}
+
+.item button{
+    margin-top: 10px;
+    padding: 15px 20px;
 }
 
 .price{
@@ -60,18 +77,36 @@
     font-weight: 500;
 }
 
+/* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 768px) {
+    .item button{
+        padding: 10px;
+    }
+}
+
+
 /*///////////////////
     Contact Section
 */
 
 .contact-box{
     background-image: url("../assets/images/asphalt_texture409.png");
-    margin-top: 20px;;
+    border: 2px solid #000;
+    margin-top: 20px;
     display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     height: 175px;
+    -webkit-box-shadow: 5px 5px 3px 0px #aeaeae;
+    box-shadow: 5px 5px 3px 0px #aeaeae;
+}
+
+.contact-container a:hover{
+    transition: all 0.3s ease;
+    border: 2px solid #fedd00;
+    -webkit-box-shadow: 2px 2px 3px 0px #aeaeae;
+    box-shadow: 2px 2px 3px 0px #aeaeae;
 }
 
 .contact-box p{

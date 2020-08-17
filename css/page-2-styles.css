@@ -15,25 +15,30 @@ button, input{
     border-radius: 2px;
 }
 
-
 /*///////////////////
     Hero Section
 */
 
 .hero{
+    text-align: left;
     background-image: url("../assets/images/img-desktop2-hero-blank.png");
     background-position-x: center;
 }
 
 .hero-form{
     background: none;
+    text-align: left;
 }
 
 /* We're using breakpoints at 576px, 768px, 992px and 1200 */
 @media (min-width: 768px) {
     h1{
         -webkit-text-stroke: 3px black;
-    }    
+    }
+    
+    .hero-form{
+        text-align: center;
+    }
 }
 
 @media (min-width: 576px) {  
@@ -135,7 +140,8 @@ button, input{
     Contact Section
 */
 .contact p{
-    font-size: 1.5rem;
+    font-family: 'Badaboom', 'Impact', fantasy;
+    font-size: 2rem;
     margin: 0px;
 }
 
