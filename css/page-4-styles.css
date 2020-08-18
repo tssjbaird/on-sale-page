@@ -2,7 +2,12 @@
 
 
 .hero{
+    text-align: right;
     background-image: url("../assets/images/img-desktop1-hero-blank.png");
+}
+
+.hero-form{
+    text-align: right;
 }
 
 .hero button, .card button{
@@ -16,6 +21,13 @@
     color: #FF7400;
     background-color: #fff;
     border-color: #df6400;
+}
+
+/* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 768px) {
+    .hero-form{
+        text-align: center;
+    }
 }
 
 /*///////////////////

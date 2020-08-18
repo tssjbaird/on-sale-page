@@ -15,6 +15,10 @@ h2{
     background-color: #182749;
 }
 
+h3{
+    text-align: center;
+}
+
 a{
     margin-top: 5px;
 }
@@ -48,6 +52,25 @@ a{
 
 .links{
     margin-top: 20px;
+}
+
+.sm-h3{
+    display: block;
+}
+
+.md-h3{
+    display: none;
+}
+
+/* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 768px) {
+    .sm-h3{
+        display: none;
+    }
+    
+    .md-h3{
+        display: block;
+    }
 }
 
 /* We're using breakpoints at 576px, 768px, 992px and 1200 */
@@ -128,7 +151,7 @@ a{
 }
 
 .contact h3{
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
 }
 
