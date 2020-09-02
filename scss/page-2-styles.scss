@@ -54,6 +54,10 @@ button, input{
     margin-top: 40px;
     padding: 20px;
     text-align: center;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #182749;
 }
 

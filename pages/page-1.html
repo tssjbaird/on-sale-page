@@ -7,7 +7,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/page-1-styles.css">
     <title>On Sale Page 1</title>
   </head>
@@ -43,42 +42,42 @@
     <div class="testimonial-container container">
         <h2>What our customers<span class="new-line">say about us</span></h2>
         <div class="testimonial-row row">
-            <div class="col-6 col-md-4 d-flex flex-column">
+            <div class="col-12 col-md-4 d-flex flex-column">
                 <div class="testimonial">   
                     <img src="../assets/images/img-desktop1-5stars.png" alt="5 Star Rating">
                     <p>"The customer service was the best. Order was placed on Wednesday, arrived on Friday. Amazing! I was able to track my order immediately. Keep up the good work."</p>
                     <p>-Steveormike85351</p>
                 </div>
             </div>
-            <div class="col-6 col-md-4 d-flex flex-column">
+            <div class="col-12 col-md-4 d-flex flex-column">
                 <div class="testimonial">   
                     <img src="../assets/images/img-desktop1-5stars.png" alt="5 Star Rating">
                     <p>"Great value and ultra fast shipping. Just what we needed. Thanks!"</p>
                     <p> -Xtremefireworks</p>
                 </div>
             </div>
-            <div class="col-6 col-md-4 d-flex flex-column">
+            <div class="col-12 col-md-4 d-flex flex-column">
                 <div class="testimonial">   
                     <img src="../assets/images/img-desktop1-5stars.png" alt="5 Star Rating">
                     <p>"The ordered items came quickly, packed safely, and easy to set up. We are so happy with the product's durability and high quality! They will last a very long time and they look great! Customer Service was also polite and helpful"</p>
                     <p>-CarefulKoala-55017</p>
                 </div>
             </div>
-            <div class="col-6 col-md-4 d-flex flex-column">
+            <div class="col-12 col-md-4 d-flex flex-column">
                 <div class="testimonial">  
                     <img src="../assets/images/img-desktop1-5stars.png" alt="5 Star Rating">
                     <p>whenever i order items, they are shipped quickly! always easy to deal with</p>
                     <p>-MichaelSavioli</p>
                 </div> 
             </div>
-            <div class="col-6 col-md-4 d-flex flex-column">
+            <div class="col-12 col-md-4 d-flex flex-column">
                 <div class="testimonial">    
                     <img src="../assets/images/img-desktop1-5stars.png" alt="5 Star Rating">
                     <p>"Great Customer Service and a Great Company to work with, no problems shipping and receiving, used this company more than once and will keep using Traffic Safety in the future."</p>
                     <p>-steveameeker</p>
                 </div>  
             </div>
-            <div class="col-6 col-md-4 d-flex flex-column">
+            <div class="col-12 col-md-4 d-flex flex-column">
                 <div class="testimonial">     
                     <img src="../assets/images/img-desktop1-5stars.png" alt="5 Star Rating">
                     <p>"Package was shipped almost immediately and delivered the next day"</p>
@@ -998,8 +997,8 @@
         ]
          
         const trafficCones = data.filter(item => item.catName === 'Traffic Cones');
-        const reflectiveDelineator = data.filter(item => item.catName === 'Reflective Traffic Markers' && 'Delineator Tubes');
-        const restOfProducts = data.filter(item => item.catName === 'Construction Signs' && 'Parking Blocks' && 'Safety Vests' && 'Water Filled Barriers');
+        const reflectiveDelineator = data.filter(item => item.catName === 'Delineator Tubes' || item.catName === 'Reflective Traffic Markers');
+        const restOfProducts = data.filter(item => item.catName === 'Construction Signs' || item.catName === 'Parking Blocks' || item.catName === 'Safety Vests' || item.catName === 'Water Filled Barriers');
         
         // Define a template function
         const conesTemplate = html`<div class="row">${trafficCones.map(item => html`

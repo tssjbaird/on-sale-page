@@ -1,0 +1,28 @@
+{
+  "name": "on-sale-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "node-sass": "^4.14.1",
+    "bootstrap": "^4.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tss-awertheimer/on-sale-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tss-awertheimer/on-sale-page/issues"
+  },
+  "homepage": "https://github.com/tss-awertheimer/on-sale-page#readme"
+}

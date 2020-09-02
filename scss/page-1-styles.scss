@@ -1,0 +1,305 @@
+/* Page 1 */
+
+/*///////////////////
+    Global
+*/
+
+@font-face {
+    font-family: 'Badaboom';
+    src: url('../assets/font/BADABB.woff2') format('woff2'),
+         url('../assets/font/BADABB.woff') format('woff'),
+         url('../assets/font/BADABB.ttf') format('truetype');
+}
+
+body{
+    background-color: #efefef;
+    padding-bottom: 100px;;
+}
+
+h1, h2, h3, h4, h5, h6, .cta-font{
+    font-family: 'Badaboom', sans-serif;
+}
+
+h1{
+    font-size: 4rem;
+    color: #fedd00;
+}
+
+h2{
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* This lets you put a span around text you want on one line*/
+.new-line::before {
+    content: '\A'; 
+    white-space: pre;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.btn, #update-email{
+    border-radius: 3px;
+}
+
+.rotated {
+    transform: rotate(-5deg);
+    margin-bottom: 20px;;
+}
+
+.spaced{
+    line-height: 1;
+    letter-spacing: .2rem;
+    word-spacing: .5rem;
+}
+
+.container{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 50px;
+}
+
+/* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 768px) {
+    .new-line::before {content: ' '; white-space: pre;}
+}
+
+/*///////////////////
+    Hero Section
+*/
+
+.hero{
+    /* Set background image on specific page CSS */
+    height: 500px;
+    padding: 0;
+}
+
+.hero-form{
+    height: 100%;
+    width: 100%;
+    padding: 0 5%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 27%, rgba(0,0,0,0.7) 100%);
+}
+
+.hero-form b, .hero-form label{
+    color: #fff;
+}
+
+.form-group{
+    margin-top: 10px;
+    width: 300px;
+}
+
+.cta-btn{
+    max-width: 300px;
+    width: 100%
+}
+
+
+/* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 768px) {
+    .hero{
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-form{
+        padding-right: 5%;
+        background: none;
+        max-width: 1000px;
+        background: none;
+    }
+}
+
+.hero{
+    text-align: right;
+    background-image: url("../assets/images/img-desktop1-hero-blank.png");
+}
+
+.hero-form{
+    text-align: right;
+}
+
+/* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 768px) {
+    .hero-form{
+        text-align: center;
+    }
+}
+
+/*///////////////////
+    Item Section
+*/
+.item{
+    margin-top: 40px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item img{
+    height: 200px;
+    margin:5px 0;
+    -webkit-box-shadow: 1px 1px 1px 1px #D4D4D4;
+    box-shadow: 1px 1px 1px 1px #D4D4D4;
+}
+
+.item-image{
+    position: relative;
+
+}
+
+.item button{
+    margin-top: 10px;
+    padding: 15px 20px;
+}
+
+.price{
+    background-image: url('../assets/images/starburst-orange.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    top: -25px;
+    right: -25px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.price::after{
+    content: "";
+    z-index: -1;
+}
+
+.price-text{
+    margin: auto;
+}
+
+.price-text b{
+    margin: 0;
+    font-size: .9rem;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.price-text b:last-child{
+    font-family: 'Badaboom', 'Impact', fantasy;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* We're using breakpoints at 576px, 768px, 992px and 1200 */
+@media (min-width: 768px) {
+    .item button{
+        padding: 10px;
+    }
+}
+
+/*///////////////////
+    Info Section
+*/
+.info{
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.info img{
+    padding: 0;
+}
+
+.info p{
+    padding: 10px 0 0;
+}
+
+.info-text{
+    margin-top: 15px;
+}
+
+@media (min-width: 992px) {
+    .info{
+        flex-direction: row;
+    }
+
+    .info img{
+        padding-right: 30px;
+    }
+}
+
+/*///////////////////
+    Testimonials Section
+*/
+
+.testimonial-row{
+    margin-top: 40px;
+}
+
+.testimonial img{
+    width: 150px
+}
+
+.testimonial p{
+    margin-top: 10px;
+}
+
+.testimonial p:last-child{
+    font-weight: 600;
+}
+
+
+/*///////////////////
+    Contact Section
+*/
+
+.contact-box{
+    background-image: url("../assets/images/asphalt_texture409.png");
+    border: 2px solid #000;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 175px;
+    -webkit-box-shadow: 5px 5px 3px 0px #aeaeae;
+    box-shadow: 5px 5px 3px 0px #aeaeae;
+}
+
+.contact-container a:hover{
+    transition: all 0.3s ease;
+    border: 2px solid #fedd00;
+    -webkit-box-shadow: 2px 2px 3px 0px #aeaeae;
+    box-shadow: 2px 2px 3px 0px #aeaeae;
+}
+
+.contact-box p{
+    font-family: 'Badaboom', 'Impact', fantasy;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contact-box p{
+    color: #fff;
+}
+
+.contact-box p:last-child{
+    color:#fedd00;
+}

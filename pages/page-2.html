@@ -7,7 +7,6 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/global.css">
         <link rel="stylesheet" href="../css/page-2-styles.css">
         <title>On Sale Page 2</title>
     </head>
@@ -988,13 +987,13 @@
                 "salePrice": 265
                 }
             ]
-             
+            
             const trafficCones = data.filter(item => item.catName === 'Traffic Cones');
             const restOfProds = data.filter(item => item.catName !== 'Traffic Cones');
             
             // All Traffic Cones
             const conesTemplate = html`<div class="row">${trafficCones.map(item => html`
-                <div class="col-2 col-md-4 col-lg-3" id="itemContainer">
+                <div class="col-12 col-md-4 col-lg-3" id="itemContainer">
                     <div class="item">
                         <div class="item-image">
                             <div class="price d-flex flex-column">
@@ -1015,7 +1014,7 @@
 
             // Everything But Traffic Cones
             const restTemplate = html`<div class="row">${restOfProds.map(item => html`
-                <div class="col-2 col-md-4 col-lg-3" id="itemContainer">
+                <div class="col-12 col-md-4 col-lg-3" id="itemContainer">
                     <div class="item">
                         <div class="item-image">
                             <div class="price d-flex flex-column">

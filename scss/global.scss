@@ -77,54 +77,7 @@ a:hover{
     .new-line::before {content: ' '; white-space: pre;}
 }
 
-/*///////////////////
-    Hero Section
-*/
 
-.hero{
-    /* Set background image on specific page CSS */
-    height: 500px;
-    padding: 0;
-}
-
-.hero-form{
-    height: 100%;
-    width: 100%;
-    padding: 0 5%;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 27%, rgba(0,0,0,0.7) 100%);
-}
-
-.hero-form b, .hero-form label{
-    color: #fff;
-}
-
-.form-group{
-    margin-top: 10px;
-    width: 300px;
-}
-
-.cta-btn{
-    max-width: 300px;
-    width: 100%
-}
-
-
-/* We're using breakpoints at 576px, 768px, 992px and 1200 */
-@media (min-width: 768px) {
-    .hero{
-        text-align: center;
-    }
-}
-
-@media (min-width: 992px) {
-    .hero-form{
-        padding-right: 5%;
-        background: none;
-        max-width: 1000px;
-        background: none;
-    }
-}
 
 
 /*///////////////////
