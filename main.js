@@ -9,6 +9,11 @@ const data = {
     ]
 }
 
+
+
+
+
+
 function rednerList(items){
     import {html, render} from 'https://unpkg.com/lit-html?module';
     // Define a template function
